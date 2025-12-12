@@ -4,7 +4,6 @@ version: 1.0.0
 homepage: https://github.com/SoundSliced/s_button
 repository: https://github.com/SoundSliced/s_button
 issue_tracker: https://github.com/SoundSliced/s_button/issues
-publish_to: none
 
 environment:
   sdk: '>=3.0.0 <4.0.0'
@@ -15,10 +14,11 @@ dependencies:
     sdk: flutter
   flutter_animate: ^4.5.2
   soundsliced_tween_animation_builder: ^1.2.0
-  bubble_label: ^3.0.1
+  bubble_label: ^4.0.0
   ticker_free_circular_progress_indicator: ^1.0.0
-  s_ink_button: ^1.0.4
+  s_ink_button: ^1.0.8
   soundsliced_dart_extensions: ^1.0.1
+  s_disabled: ^1.0.0
 
 dev_dependencies:
   flutter_test:

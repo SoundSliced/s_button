@@ -21,7 +21,7 @@
     },
     {
       "name": "bubble_label",
-      "rootUri": "file:///Users/christophechanteur/.pub-cache/hosted/pub.dev/bubble_label-3.0.1",
+      "rootUri": "file:///Users/christophechanteur/.pub-cache/hosted/pub.dev/bubble_label-4.0.0",
       "packageUri": "lib/",
       "languageVersion": "3.0"
     },
@@ -158,8 +158,14 @@
       "languageVersion": "3.4"
     },
     {
+      "name": "s_disabled",
+      "rootUri": "file:///Users/christophechanteur/.pub-cache/hosted/pub.dev/s_disabled-1.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
       "name": "s_ink_button",
-      "rootUri": "file:///Users/christophechanteur/.pub-cache/hosted/pub.dev/s_ink_button-1.0.4",
+      "rootUri": "file:///Users/christophechanteur/.pub-cache/hosted/pub.dev/s_ink_button-1.0.8",
       "packageUri": "lib/",
       "languageVersion": "3.0"
     },

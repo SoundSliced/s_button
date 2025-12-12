@@ -10,6 +10,7 @@
         "bubble_label",
         "flutter",
         "flutter_animate",
+        "s_disabled",
         "s_ink_button",
         "soundsliced_dart_extensions",
         "soundsliced_tween_animation_builder",
@@ -46,6 +47,15 @@
       ]
     },
     {
+      "name": "s_disabled",
+      "version": "1.0.0",
+      "dependencies": [
+        "flutter",
+        "soundsliced_dart_extensions",
+        "soundsliced_tween_animation_builder"
+      ]
+    },
+    {
       "name": "soundsliced_dart_extensions",
       "version": "1.0.1",
       "dependencies": [
@@ -59,7 +69,7 @@
     },
     {
       "name": "s_ink_button",
-      "version": "1.0.4",
+      "version": "1.0.8",
       "dependencies": [
         "flutter",
         "flutter_animate",
@@ -76,7 +86,7 @@
     },
     {
       "name": "bubble_label",
-      "version": "3.0.1",
+      "version": "4.0.0",
       "dependencies": [
         "assorted_layout_widgets",
         "flutter",
