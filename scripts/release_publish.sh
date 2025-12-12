@@ -165,13 +165,24 @@ EOF
         done
     fi
     
-    # Remove build directory from git tracking if already tracked
-    if git ls-files --error-unmatch build/ >/dev/null 2>&1; then
-        print_info "Removing build/ directory from git tracking..."
-        git rm -r --cached build/ 2>/dev/null || true
-        print_success "build/ directory removed from git tracking"
+    # Remove directories/files from git tracking if already tracked
+    local dirs_to_untrack=("build/" ".dart_tool/" "example/build/" "example/.dart_tool/")
+    for dir in "${dirs_to_untrack[@]}"; do
+        if git ls-files --error-unmatch "$dir" >/dev/null 2>&1; then
+            print_info "Removing $dir from git tracking..."
+            git rm -r --cached "$dir" 2>/dev/null || true
+        fi
+    done
+    
+    # Remove .DS_Store files from git tracking
+    local ds_files
+    ds_files=$(git ls-files '*.DS_Store' '.DS_Store' '*/.DS_Store' 2>/dev/null)
+    if [[ -n "$ds_files" ]]; then
+        print_info "Removing .DS_Store files from git tracking..."
+        echo "$ds_files" | xargs git rm --cached 2>/dev/null || true
     fi
     
+    print_success "Ignored files removed from git tracking"
     return 0
 }
 
