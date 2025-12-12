@@ -110,6 +110,71 @@ ensure_gitattributes() {
     return 0
 }
 
+# Create or update .gitignore
+ensure_gitignore() {
+    local file=".gitignore"
+    
+    if [[ ! -f "$file" ]]; then
+        cat > "$file" <<'EOF'
+# Dart/Flutter build artifacts
+build/
+.dart_tool/
+.packages
+
+# Example build artifacts
+example/build/
+example/.dart_tool/
+example/.packages
+
+# IDE and editor files
+.vscode/
+.idea/
+*.iml
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Test cache
+test/.test_cache/
+.test_cache/
+
+# Generated files
+*.g.dart
+*.freezed.dart
+*.mocks.dart
+
+# Coverage
+coverage/
+
+# Pubspec lock (optional for packages)
+# pubspec.lock
+EOF
+        print_info "Created .gitignore to exclude build artifacts"
+    else
+        # Add missing critical patterns
+        local patterns=("build/" ".dart_tool/" "example/build/" ".DS_Store")
+        for pattern in "${patterns[@]}"; do
+            if ! grep -q "^${pattern}$" "$file"; then
+                echo "$pattern" >> "$file"
+                print_info "Added '$pattern' to .gitignore"
+            fi
+        done
+    fi
+    
+    # Remove build directory from git tracking if already tracked
+    if git ls-files --error-unmatch build/ >/dev/null 2>&1; then
+        print_info "Removing build/ directory from git tracking..."
+        git rm -r --cached build/ 2>/dev/null || true
+        print_success "build/ directory removed from git tracking"
+    fi
+    
+    return 0
+}
+
 # Create or update .pubignore
 ensure_pubignore() {
     local file=".pubignore"
@@ -517,6 +582,7 @@ main() {
     # Initialize
     get_package_info
     organize_shell_scripts
+    ensure_gitignore
     ensure_gitattributes
     ensure_pubignore
     
