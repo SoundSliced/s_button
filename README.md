@@ -6,7 +6,7 @@
 A highly customizable Flutter button widget with rich animations, visual effects, and interaction modes. Perfect for creating engaging user interfaces with splash effects, bounce animations, haptic feedback, and more.
 
 ## Demo
-![Demo](https://raw.githubusercontent.com/SoundSliced/s_button/main/example/assets/example.mp4)
+![Demo](https://raw.githubusercontent.com/SoundSliced/s_button/main/example/assets/example.gif)
 
 ## 📋 Features
 
@@ -48,7 +48,7 @@ Add this to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  s_button: ^1.0.0
+  s_button: ^1.0.1
 ```
 
 Then run:
