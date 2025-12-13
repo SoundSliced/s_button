@@ -143,7 +143,7 @@ void main() {
         ),
       );
 
-      await tester.tap(find.text('Inactive Button'));
+      await tester.tap(find.text('Inactive Button'), warnIfMissed: false);
       await tester.pumpAndSettle();
 
       expect(wasTapped, isFalse);
