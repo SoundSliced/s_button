@@ -194,7 +194,7 @@ class _SButtonState extends State<SButton> with BubbleLabelMixin {
     _isButtonOrNot();
   }
 
-  _isButtonOrNot() {
+  void _isButtonOrNot() {
     if (!widget.isActive || widget.ignoreChildWidgetOnTap) {
       ignoreChildWidgetOnTap = true;
     }
