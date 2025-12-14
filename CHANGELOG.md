@@ -1,3 +1,7 @@
+## 1.0.3
+
+* removed the class Box - used SizedBox widget instead
+
 ## 1.0.2
 
 * Version 1.0.2

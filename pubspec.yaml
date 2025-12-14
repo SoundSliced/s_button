@@ -1,6 +1,6 @@
 name: s_button
 description: "A customizable button widget that supports various interactions and visual effects."
-version: 1.0.2
+version: 1.0.3
 homepage: https://github.com/SoundSliced/s_button
 repository: https://github.com/SoundSliced/s_button
 issue_tracker: https://github.com/SoundSliced/s_button/issues

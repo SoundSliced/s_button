@@ -49,16 +49,6 @@ class _DelayedState extends State<Delayed> {
   }
 }
 
-/// A simple Box widget
-class Box extends StatelessWidget {
-  const Box({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const SizedBox.shrink();
-  }
-}
-
 /// A customizable button widget that supports various interactions and visual effects.
 ///
 /// Features:
@@ -267,7 +257,7 @@ class _SButtonState extends State<SButton> with BubbleLabelMixin {
         child: initialized
             ? _buildButtonContent(
                 wrapLongPressForBubble: wrapLongPressForBubble)
-            : Box(),
+            : SizedBox(),
       ),
     );
   }
