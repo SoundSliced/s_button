@@ -336,6 +336,7 @@ class _SButtonState extends State<SButton> with BubbleLabelMixin {
         opacityWhenDisabled: widget.opacityWhenDisabled,
         onTappedWhenDisabled: widget.onTappedWhenDisabled,
         child: SInkButton(
+          hitTestBehavior: widget.hitTestBehavior,
           onTap: _handleTap,
           onDoubleTap: widget.onDoubleTap,
           onLongPressStart: wrapLongPressForBubble

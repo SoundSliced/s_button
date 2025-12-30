@@ -1,3 +1,7 @@
+## 1.1.0
+
+* `s_ink_button` package dependency updated --> now `s_button` accepts hitTestBehavior to determines whether the button responds to touch events and how it interacts with other widgets in the hit test hierarchy.
+
 ## 1.0.3
 
 * removed the class Box - used SizedBox widget instead

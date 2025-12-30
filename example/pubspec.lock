@@ -206,7 +206,7 @@ packages:
       path: ".."
       relative: true
     source: path
-    version: "1.0.2"
+    version: "1.0.3"
   s_disabled:
     dependency: transitive
     description:
@@ -219,10 +219,10 @@ packages:
     dependency: transitive
     description:
       name: s_ink_button
-      sha256: d98ac982586f03fe012882168902b1815781ccc08b87abe4c845f5de919b6723
+      sha256: b1ffb20ad64e8fd5fd742bab4c16de143b515b32c96ae2bd537a20302aa71693
       url: "https://pub.dev"
     source: hosted
-    version: "1.0.8"
+    version: "1.1.0"
   s_toggle:
     dependency: "direct main"
     description:
