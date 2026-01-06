@@ -1,3 +1,15 @@
+## 1.2.1
+
+* `bubble_label` package dependency updated --> 
+  - Fixed bubble positioning with ancestor transforms: Bubbles now correctly position themselves when the widget tree contains transforms such as Transform.scale, ForcePhoneSizeOnWeb (from flutter_web_frame), or FittedBox. Both the anchor position and visual size are now computed relative to the Overlay's coordinate system.
+
+  -  Fixed bubble replacement during transforms: When showing a new bubble while one is already active, the Overlay's RenderBox reference is now correctly preserved (previously it was being cleared by the dismiss call before the new bubble was inserted).
+
+  - Fixed crash when toggling transforms with active bubble: Added safety checks for RenderBox.attached to prevent "Assertion failed: attached is not true" errors when the widget tree is rebuilt (e.g., toggling Transform.scale mode) while a bubble is active.
+
+
+
+
 ## 1.2.0
 
 * `bubble_label` package dependency updated --> ensure Overlay widget in complex widget trees is detected, by requiring context to be passed when calling BubbleLabel.show

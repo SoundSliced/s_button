@@ -32,7 +32,6 @@ class _WebBubbleLabelState extends State<_WebBubbleLabel>
       onEnter: (_) async => await BubbleLabel.show(
         context: context,
         bubbleContent: widget.widget.bubbleLabelContent!,
-        /*    */
       ),
       onExit: (_) async => await BubbleLabel.dismiss(),
       opaque: false,
