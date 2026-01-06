@@ -35,7 +35,7 @@ class _WebBubbleLabelState extends State<_WebBubbleLabel>
         /*    */
       ),
       onExit: (_) async => await BubbleLabel.dismiss(),
-      opaque: false                   ,
+      opaque: false,
       child: GestureDetector(
         behavior: HitTestBehavior.translucent, // Don't consume tap events
         onDoubleTapDown: (details) => _tapPosition = details.globalPosition,
