@@ -1,3 +1,7 @@
+## 1.2.0
+
+* `bubble_label` package dependency updated --> ensure Overlay widget in complex widget trees is detected, by requiring context to be passed when calling BubbleLabel.show
+
 ## 1.1.0
 
 * `s_ink_button` package dependency updated --> now `s_button` accepts hitTestBehavior to determines whether the button responds to touch events and how it interacts with other widgets in the hit test hierarchy.

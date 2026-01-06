@@ -270,10 +270,11 @@ class _SButtonState extends State<SButton> with BubbleLabelMixin {
     widget.onLongPressStart?.call(details);
     if (widget.bubbleLabelContent != null) {
       BubbleLabel.show(
+        context: context,
         bubbleContent: widget.bubbleLabelContent!,
-        anchorKey: widget.bubbleLabelContent!.positionOverride != null
+        /*  anchorKey: widget.bubbleLabelContent!.positionOverride != null
             ? null
-            : _widgetKey,
+            : _widgetKey, */
       );
     }
   }

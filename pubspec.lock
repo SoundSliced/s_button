@@ -29,10 +29,10 @@ packages:
     dependency: "direct main"
     description:
       name: bubble_label
-      sha256: "6502ad052db7e6fd74c3092e267b1edd7d5a28c843ea2e82e5607e6d2be93294"
+      sha256: "37bc419f9a1bb0f6e64b43082a1422d8ffdbaf692a49b6a6e594bfa863b5f58c"
       url: "https://pub.dev"
     source: hosted
-    version: "4.0.0"
+    version: "5.0.0"
   characters:
     dependency: transitive
     description:

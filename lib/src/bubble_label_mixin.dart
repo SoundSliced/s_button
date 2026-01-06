@@ -30,13 +30,12 @@ class _WebBubbleLabelState extends State<_WebBubbleLabel>
   Widget build(BuildContext context) {
     return MouseRegion(
       onEnter: (_) async => await BubbleLabel.show(
+        context: context,
         bubbleContent: widget.widget.bubbleLabelContent!,
-        anchorKey: widget.widget.bubbleLabelContent!.positionOverride != null
-            ? null
-            : widgetKey,
+        /*    */
       ),
       onExit: (_) async => await BubbleLabel.dismiss(),
-      opaque: false,
+      opaque: false                   ,
       child: GestureDetector(
         behavior: HitTestBehavior.translucent, // Don't consume tap events
         onDoubleTapDown: (details) => _tapPosition = details.globalPosition,
