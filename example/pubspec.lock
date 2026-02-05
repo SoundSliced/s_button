@@ -29,10 +29,10 @@ packages:
     dependency: transitive
     description:
       name: bubble_label
-      sha256: "37bc419f9a1bb0f6e64b43082a1422d8ffdbaf692a49b6a6e594bfa863b5f58c"
+      sha256: f071fe6db7908c86368da0bab68bc0fd4ab2d97fa5eacf2e913fde749d3da87c
       url: "https://pub.dev"
     source: hosted
-    version: "5.0.0"
+    version: "5.1.0"
   characters:
     dependency: transitive
     description:
@@ -206,7 +206,7 @@ packages:
       path: ".."
       relative: true
     source: path
-    version: "1.2.0"
+    version: "1.2.1"
   s_disabled:
     dependency: transitive
     description:

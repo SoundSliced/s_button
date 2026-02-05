@@ -87,7 +87,7 @@ SButton(
 ```dart
 SButton(
   onTap: (offset) => print('Tapped'),
-  splashColor: Colors.blue.withOpacity(0.3),
+  splashColor: Colors.blue.withValues(alpha: 0.3),
   splashOpacity: 0.5,
   shouldBounce: true,
   bounceScale: 0.95,
@@ -219,7 +219,7 @@ SButton(
   // Styling
   splashColor: Colors.blue,
   splashOpacity: 0.4,
-  selectedColor: Colors.blue.withOpacity(0.2),
+  selectedColor: Colors.blue.withValues(alpha: 0.2),
   borderRadius: BorderRadius.circular(12), // Clips child and applies to splash/overlay
   
   // Animations
