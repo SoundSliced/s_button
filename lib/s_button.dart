@@ -1,5 +1,5 @@
 library;
 
-export 'package:bubble_label/bubble_label.dart';
-export 'package:s_ink_button/s_ink_button.dart';
-export 'src/s_button.dart';
+/// A customizable button widget that supports various interactions and visual effects (splash, hover, focus, and press).
+/// refer to the [README] or the Example app, or the s_packages documentation for more details and examples.
+export 'package:s_packages/s_packages.dart';

@@ -48,7 +48,7 @@ Add this to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  s_button: ^1.2.1
+  s_button: ^2.0.0
 ```
 
 Then run:

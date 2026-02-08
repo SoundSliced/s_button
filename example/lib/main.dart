@@ -1,8 +1,4 @@
-import 'dart:async';
-
-import 'package:flutter/material.dart';
 import 'package:s_button/s_button.dart';
-import 'package:s_toggle/s_toggle.dart';
 
 void main() {
   runApp(const MyApp());

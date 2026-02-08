@@ -13,7 +13,6 @@ dependencies:
     sdk: flutter
   s_button:
     path: ../
-  s_toggle: ^2.0.1
 
 dev_dependencies:
   flutter_test:
