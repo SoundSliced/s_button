@@ -1,3 +1,7 @@
+ 
+
+## 2.0.4
+- `s_packages` package dependency upgraded
 
 ## 2.0.3
 - README updated
