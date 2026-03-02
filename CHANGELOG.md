@@ -1,3 +1,7 @@
+## [3.1.0]
+- `s_packages` dependency upgraded to ^3.1.0
+  - internal `SInkButton` splash visual effect improvement
+
 ## [3.0.0]
 - `s_packages` dependency upgraded to ^3.0.0
 
